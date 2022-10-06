@@ -1,0 +1,60 @@
+body{
+    background-color: bisque;
+}
+
+.name{
+    /* background-color: black; */
+    display: flex;
+    height: 30px;
+    width: 300px;
+    /* gap:10px; */
+    /* margin-top: 50px; */
+    margin: auto;
+    /* padding-top: 50px; */
+
+}
+.navbar{
+    border: 1px solid black;
+    color: white;
+    background-color: teal;
+    height:50px;
+
+}
+
+.sign{
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    /* margin-top: 30px; */
+
+}
+.signup{
+    margin-top: 30px;
+    gap:10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.inp{
+
+}
+
+.list{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+
+.list>input{
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.list>button{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
