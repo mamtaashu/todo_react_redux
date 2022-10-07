@@ -1,13 +1,6 @@
 {
   "user": [
     {
-      "name": "az",
-      "email": "az",
-      "password": "az",
-      "todo": [],
-      "id": 1
-    },
-    {
       "name": "",
       "email": "",
       "password": "",
@@ -69,7 +62,12 @@
         "ng",
         "jhy",
         "",
-        "ngd"
+        "ngd",
+        "",
+        "hlo",
+        "",
+        "",
+        "gh"
       ],
       "id": 10
     }

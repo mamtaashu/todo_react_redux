@@ -44,7 +44,7 @@ export default function Login() {
         <h3>Log-in</h3>
        <input className='name' type="email" value={email}  placeholder="Enter Email" onChange={(e)=>setEmail(e.target.value)}/>
        <input className='name' type="password" value={password} placeholder="Enter Password" onChange={(e)=>setPassword(e.target.value)} />
-       <input type="submit"  onClick={handleLogin} placeholder='Submit' />
+       <input className='submit' type="submit"  onClick={handleLogin} placeholder='Submit' />
       
     </div>
   )

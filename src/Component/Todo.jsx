@@ -59,16 +59,16 @@ const handleDelete = async(id)=>{
 
 return<>
 <h1>Todo</h1>
-<input type={'text'}  value={newtodo} onChange={(e)=>setaddtodo(e.target.value)}/>
+<input className='input' type={'text'}  value={newtodo} onChange={(e)=>setaddtodo(e.target.value)}/>
 
-<button onClick={update}>Add Todo</button>
+<button className="button"   onClick={update}>Add Todo</button>
 
 {
   currentodo?.map((e,i)=>{
         return(
             <div key={i}>
-                <p  > {e}
-                <button onClick={()=>handleDelete(i)} > Delete</button>
+                <p style={{color:"red"}}  > {e}
+                {/* <button onClick={()=>handleDelete(i)} > Delete</button> */}
                 </p>
             </div>
         )

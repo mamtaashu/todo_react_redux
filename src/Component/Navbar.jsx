@@ -25,26 +25,37 @@ export default function Navbar() {
 
     }
   return (
-    <div className='navbar'>
+    <div style={{display:'flex'}} className='navbar'>
+
+      {
+        login.email?null : <div className='todo'>
+        <h1>Todo</h1>
+        </div>
+      }
+      
+
+<div className='other'>
        {
         login.email ? 
-         <Link to="/todo" >Todo</Link> : null
+         <Link  className='todo' to="/todo" >Todo</Link> : null
        }
      {
       login.email? null :  <Link className='sign' to="/sign"   >SignUp</Link>
      }
      
      {
-      login.email?  <Link className='sign' to="/login"  onClick={handleLogout} >Logout</Link> :  <Link className='sign' to="/login"   >LogIn</Link> 
+      login.email?  <Link className='loginlink' to="/login"  onClick={handleLogout} >Logout</Link> : <Link  to="/login" className='loginlink'  >Login</Link>   
      }
-     {
-      login.logout?  <Link className='sign' to="/login"   >LogIn</Link> : null
-     }
+     {/* {
+      login.logout?  <Link className='login' to="/login"   >LogIn</Link> : null
+     } */}
 
      
 
 
-    
+</div>
+
+
       
     </div>
   )
